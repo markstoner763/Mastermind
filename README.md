@@ -1,5 +1,15 @@
 # Mastermind
 
+## Running this Program
+
+This program works in Python 3, and may be run as such in a terminal:
+
+```sh
+python3 main.py
+```
+
+Once running, the program will generate a secret code in the background, and prompt the user to begin guessing the code. Making an attempt is as easy as typing four colors (separated by spaces), and hitting Enter/Return to submit the answer.
+
 ## Game Overview and Rules
 
 This program is based on the game "Mastermind," first released in 1970. In this game, there are two players - the Codemaker, and Codebreaker. In this app, the program serves as the Codemaker, and the user plays as the Codebreaker.
@@ -28,9 +38,9 @@ In the original game, the Codemaker player has little "Key Pegs" for this purpos
 
 There are two specific elements to this feedback:
 
-1. The Codemaker is told how many of their guessed colors is BOTH the correct color AND position, in the secret code.
+1. The Codebreaker is told how many of their guessed colors are BOTH the correct color AND position, in the secret code.
 
-2. The Codemaker is then told how many their guessed colors are the correct color, but NOT in the correct position.
+2. The Codebreaker is then told how many of their guessed colors are the correct color, but NOT in the correct position.
 
 ## _To illustrate:_
 
@@ -51,16 +61,6 @@ The first feedback line refers to the first "Blue" entry in the secret code, whi
 
 The second feedback line refers to the "Yellow" entry in the secret code, as while the Codemaker correctly guessed that Yellow is in the secret code, they do not have the correct position for Yellow, currently.
 
-## Running this Program
-
-This program works in Python 3, and may be run as such in a terminal:
-
-```sh
-python3 main.py
-```
-
-Once running, the program will generate a secret code in the background, and prompt the user to begin guessing the code. Making an attempt is as easy as typing four colors (separated by spaces), and hitting Enter/Return to submit the answer.
-
-From there on out, it will be a maximum of 10 attempts offeered by the program, to guess the code.
+As mentioned, it will be a maximum of 10 attempts offered by the program, to guess the code.
 
 Best of luck, and happy codebreaking!
